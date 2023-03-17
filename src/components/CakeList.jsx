@@ -8,6 +8,7 @@ const CakeList = (props) => {
             </div>
             <div className="details-text">
                 <span >{cakeName} ({cakeCallories} Kcal)</span>
+                {/* console.log(cakeCallories); */}
             </div>
         </div>
     )
