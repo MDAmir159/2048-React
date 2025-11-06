@@ -133,7 +133,7 @@ const BoardView = () => {
 
       {/* notes starts */}
       <div className="instructions">
-        <p><b>NOTE:</b> This site git.io/cupcakes is a spin-off of the official version of 2048 created by Gabriele Cirulli.</p>
+        <p>Copyright MD Amirul Islam @2025</p>
       </div>
     </div>
   );
