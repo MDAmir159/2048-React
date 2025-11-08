@@ -4,7 +4,7 @@ const CakeList = (props) => {
     return (
         <div className="cake-details">
             <div className="image-container">
-                <img src= {cakeImg} />
+                <img src={cakeImg} alt={cakeName} />
             </div>
             <div className="details-text">
                 <span >{cakeName} ({cakeCallories} Kcal)</span>

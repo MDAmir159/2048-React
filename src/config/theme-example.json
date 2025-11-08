@@ -1,0 +1,177 @@
+{
+  "$schema": "./appConfig.json",
+  "info": {
+    "description": "Example theme configuration file - copy and modify appConfig.json to customize themes",
+    "version": "1.0.0"
+  },
+  "theme": {
+    "colors": {
+      "primary": {
+        "main": "#4a90e2",
+        "light": "#7bb3f0", 
+        "dark": "#357abd",
+        "darker": "#1e3f5a"
+      },
+      "background": {
+        "body": "#f0f8ff",
+        "board": "#4a90e2",
+        "cell": "#7bb3f0",
+        "overlay": "#2c3e50"
+      },
+      "text": {
+        "primary": "#ffffff",
+        "secondary": "#2c3e50",
+        "tertiary": "#34495e",
+        "quaternary": "#7f8c8d",
+        "accent": "#e74c3c",
+        "tile": "#2c3e50",
+        "tileLight": "#ecf0f1",
+        "tileWhite": "#ffffff",
+        "message": "#95a5a6"
+      },
+      "tiles": {
+        "tile0": "#bdc3c7",
+        "tile2": "#ecf0f1",
+        "tile4": "#f39c12"
+      },
+      "borders": {
+        "cakeContainer": "#4a90e2",
+        "tryAgain": "#ffffff"
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "background": "./assets/images/bg-blue-theme.jpg",
+      "tiles": {
+        "2": "./assets/images/2.jpg",
+        "4": "./assets/images/4.jpg",
+        "8": "./assets/images/8.jpg",
+        "16": "./assets/images/16.jpg",
+        "32": "./assets/images/32.jpg",
+        "64": "./assets/images/64.jpg",
+        "128": "./assets/images/128.jpg",
+        "256": "./assets/images/256.jpg",
+        "512": "./assets/images/512.jpg",
+        "1024": "./assets/images/1024.jpg",
+        "2048": "./assets/images/2048.jpg",
+        "4096": "./assets/images/4096.jpg",
+        "8192": "./assets/images/8192.jpg"
+      },
+      "gameAssets": {
+        "tryAgain": "./assets/img/try-again-blue.gif",
+        "gameOver": "./assets/img/game-over-blue.gif"
+      }
+    },
+    "fonts": {
+      "clearSans": "../src/clear-sans.ttf"
+    }
+  },
+  "gameData": {
+    "cupcakes": [
+      {
+        "value": 2,
+        "name": "Ocean Breeze",
+        "calories": 180,
+        "imageKey": "2"
+      },
+      {
+        "value": 4,
+        "name": "Sky Blue Delight",
+        "calories": 220,
+        "imageKey": "4"
+      },
+      {
+        "value": 8,
+        "name": "Azure Dream",
+        "calories": 280,
+        "imageKey": "8"
+      },
+      {
+        "value": 16,
+        "name": "Midnight Blue",
+        "calories": 350,
+        "imageKey": "16"
+      },
+      {
+        "value": 32,
+        "name": "Sapphire Surprise",
+        "calories": 430,
+        "imageKey": "32"
+      },
+      {
+        "value": 64,
+        "name": "Cobalt Cream",
+        "calories": 520,
+        "imageKey": "64"
+      },
+      {
+        "value": 128,
+        "name": "Navy Velvet",
+        "calories": 620,
+        "imageKey": "128"
+      },
+      {
+        "value": 256,
+        "name": "Royal Blue",
+        "calories": 750,
+        "imageKey": "256"
+      },
+      {
+        "value": 512,
+        "name": "Ocean Deep",
+        "calories": 900,
+        "imageKey": "512"
+      },
+      {
+        "value": 1024,
+        "name": "Blue Moon",
+        "calories": 1100,
+        "imageKey": "1024"
+      },
+      {
+        "value": 2048,
+        "name": "Electric Blue",
+        "calories": 1400,
+        "imageKey": "2048"
+      },
+      {
+        "value": 4096,
+        "name": "Blue Diamond",
+        "calories": 1800,
+        "imageKey": "4096"
+      },
+      {
+        "value": 8192,
+        "name": "Infinite Blue",
+        "calories": 2500,
+        "imageKey": "8192"
+      }
+    ],
+    "maxCalories": 50000,
+    "maxCupcakeName": "Blue Infinity"
+  },
+  "ui": {
+    "dimensions": {
+      "board": {
+        "width": "440px",
+        "height": "440px"
+      },
+      "tile": {
+        "width": "100px",
+        "height": "100px"
+      },
+      "tileSpacing": "110px",
+      "tileMargin": "5px"
+    },
+    "borderRadius": {
+      "default": "10px",
+      "scoreCard": "8px",
+      "imageContainer": "12px"
+    },
+    "transitions": {
+      "button": "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+      "animation": "0.3s"
+    }
+  }
+}

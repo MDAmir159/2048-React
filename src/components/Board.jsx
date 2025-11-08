@@ -6,11 +6,12 @@ import useEvent from "../hooks/useEvent";
 import GameOverlay from "./GameOverlay";
 import CakeList from "./CakeList";
 import { dummyData } from "../assets/dummyData";
+import { getGameData } from "../config";
 
 const BoardView = () => {
   const [board, setBoard] = useState(new Board());
-  const [maxTileInfo, setMaxTileInfo] = useState(board.score)
-  const cakeLists = dummyData
+  const cakeLists = dummyData;
+  const gameData = getGameData();
   const handleKeyDown = (event) => {
     if (board.hasWon()) {
       return;
@@ -85,7 +86,7 @@ const BoardView = () => {
             </div>
             <div className="score-card">
                 <p className="p-title"> KCAL MAX </p>
-                <p className="p-value"> 78440 </p>
+                <p className="p-value"> {gameData.maxCalories} </p>
             </div>
       </div>
       <div className="score">
@@ -95,7 +96,7 @@ const BoardView = () => {
         </div>
         <div className="score-card">
             <p className="p-title"> CUPCAKE MAX </p>
-            <p className="p-value"> Choc. Spider Web </p>
+            <p className="p-value"> {gameData.maxCupcakeName} </p>
         </div>
       </div>
       {/* game score and new game button */}

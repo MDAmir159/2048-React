@@ -5,21 +5,16 @@
 
 body {
   display: flex;
-  // background: rgb(2,0,36);
-  background: white;
+  background: var(--color-background-body, white);
   background-image: url('./assets/images/bg.jpg');
   background-repeat: no-repeat;
   background-position: center top;
-  // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,64,124,1) 47%, rgba(0,212,255,1) 100%);
-  color: white;
+  color: var(--color-text-primary, white);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // align-content: center;
-  // align-items: center;
   font-family: "Clear Sans", sans-serif;
   font-size: 21px;
-  
 }
 
 .main-container {
@@ -37,7 +32,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #eb5282;
+  background-color: var(--color-primary-dark, #eb5282);
 }
 
 .board {
@@ -45,8 +40,7 @@ body {
   width: 440px;
   height: 440px;
   padding: 5px;
-  // background-color: #57407c;
-  background-color: #f67098;
+  background-color: var(--color-primary-main, #f67098);
   border-radius: 7px;
   outline: none;
   position: relative;
@@ -61,7 +55,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(71, 60, 60);
+  color: var(--color-text-secondary, rgb(71, 60, 60));
   margin-top: 5rem;
 }
 
@@ -81,7 +75,7 @@ h1 {
 .score-card {
   height: 4rem;
   width: 48%;
-  background-color: #f67098;
+  background-color: var(--color-primary-main, #f67098);
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -100,12 +94,12 @@ h1 {
 }
 
 .join-cupcakes p{
-  color: rgb(29, 17, 17);
+  color: var(--color-text-tertiary, rgb(29, 17, 17));
   font-size:larger;
 }
 
 .p-title{
-  color: rgb(29, 17, 17);
+  color: var(--color-text-tertiary, rgb(29, 17, 17));
   font-size: 13px;
   margin-top: 2; /* Remove top margin */
   margin-bottom: 3px; /* Add a small bottom margin */
@@ -113,7 +107,7 @@ h1 {
 }
 
 .p-value{
-  color :rgb(255, 255, 255);
+  color: var(--color-text-primary, rgb(255, 255, 255));
   font-size: 18px;
   margin-top: 0; /* Remove top margin */
   margin-bottom: 20px; 
@@ -138,18 +132,18 @@ h1 {
 }
 
 .resetButton {
-  background-color: #f67098;
+  background-color: var(--color-primary-main, #f67098);
   color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   font-size: 25px;
   padding: 10px 20px;
   border-radius: 7px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  color: rgb(71, 60, 60);
+  transition: var(--transitions-button, color 0.3s ease, background-color 0.3s ease);
+  color: var(--color-text-secondary, rgb(71, 60, 60));
 
   &:hover {
-    background-color: #3d2963;
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--color-primary-darker, #3d2963);
+    color: var(--color-text-primary, rgba(255, 255, 255, 1));
   }
 }
 
@@ -158,7 +152,7 @@ h1 {
 }
 
 .score-box {
-  background-color: #eb5282;
+  background-color: var(--color-primary-dark, #eb5282);
   color: rgba(29, 17, 17, 0.5);
   min-width: 50px;
   width: 70px;
@@ -168,7 +162,7 @@ h1 {
 
 .instructions {
   width: 520px;
-  color: rgba(69, 42, 42, 0.863);
+  color: var(--color-text-quaternary, rgba(69, 42, 42, 0.863));
 }
 
 .instructions p{
@@ -183,7 +177,7 @@ h1 {
 
 .legend-title {
   width: 440px;
-  color: rgb(29, 17, 17);
+  color: var(--color-text-tertiary, rgb(29, 17, 17));
 }
 
 .legends .legend-title p {
@@ -194,13 +188,12 @@ h1 {
 .cake-details {
   height: fit-content;
   display: flex;
-  // justify-content: space-between;
-  color: #4d2523;
+  color: var(--color-text-accent, #4d2523);
   margin-bottom: 1rem;
 }
 
 .cake-details .image-container {
-  border: 8px solid #f67098;
+  border: 8px solid var(--color-borders-cake-container, #f67098);
   border-radius: 10px;
 }
 
@@ -232,65 +225,65 @@ h1 {
   vertical-align: middle;
   border-radius: 7px;
   font-family: "Clear Sans";
-  color: #766;
-  background-color: #f9a2bc;
+  color: var(--color-text-tile, #766);
+  background-color: var(--color-primary-light, #f9a2bc);
 }
 
 .tile0 {
-  background-color: #dcb;
+  background-color: var(--color-tiles-tile0, #dcb);
 }
 
 .tile2 {
-  background-color: #eee;
+  background-color: var(--color-tiles-tile2, #eee);
   background-image: url(./assets/images/2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .tile4 {
-  background-color: #eec;
+  background-color: var(--color-tiles-tile4, #eec);
   background-image: url(./assets/images/4.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .tile8 {
-  color: #ffe;
+  color: var(--color-text-tile-light, #ffe);
   background-image: url(./assets/images/8.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .tile16 {
-  color: #ffe;
+  color: var(--color-text-tile-light, #ffe);
   background-image: url(./assets/images/16.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .tile32 {
-  color: #ffe;
+  color: var(--color-text-tile-light, #ffe);
   background-image: url(./assets/images/32.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .tile64 {
-  color: #ffe;
+  color: var(--color-text-tile-light, #ffe);
   background-image: url(./assets/images/64.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .tile128 {
-  color: #ffe;
+  color: var(--color-text-tile-light, #ffe);
   background-image: url(./assets/images/128.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .tile256 {
-  color: #ffe;
+  color: var(--color-text-tile-light, #ffe);
   background-image: url(./assets/images/256.jpg);
   font-size: 45px;
   background-size: cover;
@@ -298,7 +291,7 @@ h1 {
 }
 
 .tile512 {
-  color: #ffe;
+  color: var(--color-text-tile-light, #ffe);
   background-image: url(./assets/images/512.jpg);
   font-size: 45px;
   background-size: cover;
@@ -306,7 +299,7 @@ h1 {
 }
 
 .tile1024 {
-  color: #fff;
+  color: var(--color-text-tile-white, #fff);
   background-image: url(./assets/images/1024.jpg);
   font-size: 35px;
   background-size: cover;
@@ -321,7 +314,7 @@ h1 {
   top: 0;
   bottom: 0;
   padding: 0px;
-  color: #fff;
+  color: var(--color-text-tile-white, #fff);
   background-image: url(./assets/images/2048.jpg);
   font-size: 35px;
   background-size: cover;
@@ -337,23 +330,6 @@ h1 {
 
 .tile {
   position: absolute;
-}
-
-.tile.merged {
-  // display: none;
-}
-
-.tile.merged.isMoving {
-  // display: inline;
-}
-
-.tile.new,
-.overlay {
-  // animation-duration: 0.2s;
-  // animation-name: newTile;
-  // animation-fill-mode: forwards;
-  // animation-delay: 0.15s;
-  // transform: scale(0);
 }
 
 @keyframes newTile {
@@ -382,8 +358,8 @@ h1 {
 }
 
 .tryAgain {
-  background-color: #876;
-  color: #fff;
+  background-color: var(--color-background-overlay, #876);
+  color: var(--color-text-tile-white, #fff);
   height: 40px;
   width: 200px;
   font-size: 20px;
@@ -391,7 +367,7 @@ h1 {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  border: 2px solid white;
+  border: 2px solid var(--color-borders-try-again, white);
 }
 
 .gameOver {
@@ -407,5 +383,5 @@ h1 {
 }
 
 .overlay .message {
-  color: #666;
+  color: var(--color-text-message, #666);
 }

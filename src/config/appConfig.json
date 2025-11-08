@@ -1,0 +1,172 @@
+{
+  "theme": {
+    "colors": {
+      "primary": {
+        "main": "#f67098",
+        "light": "#f9a2bc",
+        "dark": "#eb5282",
+        "darker": "#3d2963"
+      },
+      "background": {
+        "body": "white",
+        "board": "#f67098",
+        "cell": "#f9a2bc",
+        "overlay": "#876"
+      },
+      "text": {
+        "primary": "white",
+        "secondary": "rgb(71, 60, 60)",
+        "tertiary": "rgb(29, 17, 17)",
+        "quaternary": "rgba(69, 42, 42, 0.863)",
+        "accent": "#4d2523",
+        "tile": "#766",
+        "tileLight": "#ffe",
+        "tileWhite": "#fff",
+        "message": "#666"
+      },
+      "tiles": {
+        "tile0": "#dcb",
+        "tile2": "#eee",
+        "tile4": "#eec"
+      },
+      "borders": {
+        "cakeContainer": "#f67098",
+        "tryAgain": "white"
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "background": "./assets/images/bg.jpg",
+      "tiles": {
+        "2": "./assets/images/2.jpg",
+        "4": "./assets/images/4.jpg",
+        "8": "./assets/images/8.jpg",
+        "16": "./assets/images/16.jpg",
+        "32": "./assets/images/32.jpg",
+        "64": "./assets/images/64.jpg",
+        "128": "./assets/images/128.jpg",
+        "256": "./assets/images/256.jpg",
+        "512": "./assets/images/512.jpg",
+        "1024": "./assets/images/1024.jpg",
+        "2048": "./assets/images/2048.jpg",
+        "4096": "./assets/images/4096.jpg",
+        "8192": "./assets/images/8192.jpg"
+      },
+      "gameAssets": {
+        "tryAgain": "./assets/img/try-again.gif",
+        "gameOver": "./assets/img/game-over.gif"
+      }
+    },
+    "fonts": {
+      "clearSans": "../src/clear-sans.ttf"
+    }
+  },
+  "gameData": {
+    "cupcakes": [
+      {
+        "value": 2,
+        "name": "Vanilla Birthday",
+        "calories": 200,
+        "imageKey": "2"
+      },
+      {
+        "value": 4,
+        "name": "Bubblegum Pink",
+        "calories": 250,
+        "imageKey": "4"
+      },
+      {
+        "value": 8,
+        "name": "Sunshine Vanilla",
+        "calories": 320,
+        "imageKey": "8"
+      },
+      {
+        "value": 16,
+        "name": "Valrhona Blonde Ganache",
+        "calories": 400,
+        "imageKey": "16"
+      },
+      {
+        "value": 32,
+        "name": "Chocolate Peanut Butter Cheesecake",
+        "calories": 500,
+        "imageKey": "32"
+      },
+      {
+        "value": 64,
+        "name": "Chocolate Mint Fudge",
+        "calories": 650,
+        "imageKey": "64"
+      },
+      {
+        "value": 128,
+        "name": "Chocolate Spider Web",
+        "calories": 820,
+        "imageKey": "128"
+      },
+      {
+        "value": 256,
+        "name": "Toasted Marshmallow",
+        "calories": 1000,
+        "imageKey": "256"
+      },
+      {
+        "value": 512,
+        "name": "Cookies And Creme",
+        "calories": 1200,
+        "imageKey": "512"
+      },
+      {
+        "value": 1024,
+        "name": "Chocolate Sundae",
+        "calories": 1500,
+        "imageKey": "1024"
+      },
+      {
+        "value": 2048,
+        "name": "White Chocolate Peppermint",
+        "calories": 2000,
+        "imageKey": "2048"
+      },
+      {
+        "value": 4096,
+        "name": "2017 Confetti Vanilla",
+        "calories": 3000,
+        "imageKey": "4096"
+      },
+      {
+        "value": 8192,
+        "name": "Rainbow",
+        "calories": 5000,
+        "imageKey": "8192"
+      }
+    ],
+    "maxCalories": 78440,
+    "maxCupcakeName": "Choc. Spider Web"
+  },
+  "ui": {
+    "dimensions": {
+      "board": {
+        "width": "440px",
+        "height": "440px"
+      },
+      "tile": {
+        "width": "100px",
+        "height": "100px"
+      },
+      "tileSpacing": "110px",
+      "tileMargin": "5px"
+    },
+    "borderRadius": {
+      "default": "7px",
+      "scoreCard": "5px",
+      "imageContainer": "10px"
+    },
+    "transitions": {
+      "button": "color 0.3s ease, background-color 0.3s ease",
+      "animation": "0.2s"
+    }
+  }
+}
